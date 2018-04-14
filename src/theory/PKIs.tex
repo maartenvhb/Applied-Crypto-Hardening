@@ -150,7 +150,7 @@ organizations and vendors~\cite{tschofenig-webpki}. Currently two
 methods are used, DANE~\cite{rfc6698} and Certificate
 Pinning~\cite{draft-ietf-websec-key-pinning}. Google recently proposed
 a new system to detect malicious CAs and certificates called Certificate
-Transparency~\cite{certtransparency}. In addition, RFC 6844 describes Certification Authorization Records, a mechanism for domain name owners to signal which Certificate Authorities are authorized to issue certificates for their domain.
+Transparency~\cite{certtransparency}. In addition, RFC 6844 describes DNS Certification Authority Authorization (CAA) Resource Records, a mechanism for domain name owners to signal which Certificate Authorities are authorized to issue certificates for their domain.
 
 % \subsubsection{DANE}
 % \label{sec:dane}
@@ -158,10 +158,10 @@ Transparency~\cite{certtransparency}. In addition, RFC 6844 describes Certificat
 % \subsubsection{Certificate Pinning}
 % \label{sec:certpinning}
 
-\subsection{Certification Authorization Records}
+\subsection{Certification Authority Authorization Resource Records}
 \label{sec:caarecords}
 
-RFC 6844 describes Certification Authorization Records, a mechanism for domain name owners to signal which Certificate Authorities are authorized to issue certificates for their domain.
+RFC 6844 describes DNS Certification Authority Authorization (CAA) Resource Records, a mechanism for domain name owners to signal which Certificate Authorities are authorized to issue certificates for their domain.
  
 When a CAA record is defined for a particular domain, it specifies that the domain owner requests Certificate Authorities to validate any request against the CAA record. If the certificate issuer is not listed in the CAA record, it should not issue the certificate.
  
